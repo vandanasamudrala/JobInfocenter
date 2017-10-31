@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel=' stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+<% include template/header.ejs %>
+
+
+<p><%= videodata.categoryName %></p>
+
+<ul>
+    <% videodata.categories.forEach(function(item) { %>
+  <li><%= item.categoryName %></li>
+
+
+    <% });   %>
+
+
+
+
+
+</ul>
+</body>
+</html>
